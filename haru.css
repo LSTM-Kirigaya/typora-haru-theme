@@ -277,6 +277,15 @@ code {
     border-radius: 8px;
 }
 
+#write blockquote code {
+    margin: 0 2px;
+    padding: 4px 6px;
+    color: white;
+    white-space: pre-wrap;
+    background: var(--main-color);
+    border-radius: 8px;
+}
+
 kbd,
 samp,
 tt,
@@ -297,6 +306,7 @@ pre.md-meta-block {
     font-family: var(--monospace);
     border-radius: 1.2em;
     color: white;
+    caret-color: white;
 }
 
 
