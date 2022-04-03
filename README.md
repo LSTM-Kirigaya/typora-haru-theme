@@ -19,6 +19,8 @@ typora-copy-images-to: ../../media/theme/haru
 
 `Haru` is a light style theme for Typora. I hope it can bring you inspiration, elegance and peaceful mind.
 
+![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru.png)
+
 ---
 
 ## Screenshot
@@ -75,7 +77,7 @@ rendered result:
 
 ## Install
 
-1. Download `haru.zip` from Typora Gallery or my github release
+1. Download `haru.zip` from Typora Gallery or my github [release](https://github.com/LSTM-Kirigaya/typora-haru-theme/releases/tag/typora)
 2. Typora Menu `->` Themes `->` Open Theme Folder 
 3. Unzip `haru.zip` into the folder
 4. Restart Typora
