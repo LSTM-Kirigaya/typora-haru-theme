@@ -133,19 +133,19 @@ html {
 
 
 #write img {
-    border-radius: 1em;
-    box-shadow: 0 0 8px 3px rgba(134, 136, 137, 0.8);
+    border-radius: 1.5em !important;
+    box-shadow: 0 0 10px 3px rgba(134, 136, 137, 0.8);
     transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
 }
 
-#write img:hover {
-    box-shadow: 0 0 25px 3px var(--shadow-color);
+/* #write img:hover {
+    box-shadow: 0 0 10px 5px var(--shadow-color);
     transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
-}
+} */
 
 
 #write blockquote {
@@ -622,9 +622,6 @@ color: white;
 
 
 /* outside */
-.megamenu-opened .megamenu-content {
-
-}
 
 
 #megamenu-content {
@@ -659,8 +656,11 @@ color: white;
 #megamenu-menu-sidebar {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--sidebar-font-color);
+    box-shadow: 0 0 8px 4px rgb(100 100 100 / 80%);
+    margin-top: 3%;
+    height: 92%;
+    border-radius: 0 4em 4em 0;
 }
-
 #megamenu-back-btn {
     border-radius: 1.2em;
     color: var(--main-color);
@@ -754,6 +754,18 @@ color: white;
 }
 
 /* side bar Ctrl Shift 2 */
+/* .typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #typora-sidebar {
+    display: block;
+    left: 0;
+    transition: left .3s;
+    border-radius: 0em 3em 3em 0em;
+    box-shadow: 0 0 8px 3px rgb(100 100 100 / 80%);
+    margin-top: 20px;
+    margin-bottom: 5%;
+    height: 95%;
+    padding-right: 10px;
+} */
+
 .info-panel-tab-border {
     color: var(--main-color) !important;
     background-color: var(--main-color) !important;
@@ -923,9 +935,72 @@ div#file-library-list-children {
     background-color: var(--main-color);
 }
 
-
-
 .modal-content {
     border-radius: 1.5em;
     border: none;
+}
+
+
+
+/* Perference */
+.nav-group-item-item:hover {
+    transition: all .3s;
+    border: 2px solid var(--main-color);
+}
+.nav-group-item.active {
+    color: white;
+    font-family: var(--title-font);
+    transition: all .3s;
+    border-radius: 1.5em;
+    padding: 6px 11px 6px 11px;
+}
+.nav-group-item {
+    transition: all .3s;
+    border-radius: 1.5em;
+    width: fit-content;
+    cursor: pointer;
+}
+.nav-group-item.active, .nav-group-item:active {
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
+.pane-group {
+    font-family: var(--title-font);
+}
+
+input:not([type=range]):not([type=color]) {
+    outline: none;
+    border: 2px solid var(--main-color);
+    border-radius: .7em;
+    font-size: 16px;
+}
+
+input:not([type=range]):not([type=color]):focus {
+    border-radius: .7em;
+    color: white;
+    background-color: var(--main-color);
+    box-shadow: 0 0 6px 3px var(--shadow-color);
+    transition: all .3s linear;
+}
+
+.pane select,
+.pane .btn {
+    border-radius: 0.7em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.pane .btn:hover {
+    color: white !important;
+    transition: all .3s linear;
+    background-color: var(--main-color);
+}
+
+.label-input-group td:hover {
+    box-shadow: none;
+}
+
+.label-input-group .row:hover {
+    color: black;
+    background-color: white;
 }
