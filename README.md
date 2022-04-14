@@ -53,7 +53,9 @@ Almost every element or container in haru is designed as round corner, including
 
 Table in haru doesn't have border and cell will be highlighted on any hover.
 
-![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru5.png)
+![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru6.png)
+
+
 
 ### Title + Blockquote?
 
@@ -71,7 +73,7 @@ I combine title and blockquote to make extra information:
 
 rendered result:
 
-![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru6.png)
+![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru5.png)
 
 ---
 
