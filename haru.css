@@ -156,17 +156,21 @@ html {
     background: var(--light-color);
     border-radius : 0.5em;
     font-family: var(--blockquote-font);
+    line-height: 35px;
 }
 
 #write blockquote h1 {
     font-weight: 200;
     font-size: var(--quote-tag-font-size);
     border-bottom: none;
+    font-family: var(--base-font);
+    line-height: 35px;
 }
 
 #write blockquote h1::before {
     content: "Tips";
     background-color: var(--main-color);
+    font-family: var(--title-font);
     color: white;
     font-size: var(--quote-tag-font-size);
     border-radius: .3em;
@@ -177,11 +181,14 @@ html {
 #write blockquote h2 {
     font-weight: 200;
     font-size: var(--quote-tag-font-size);
+    font-family: var(--base-font);
+    line-height: 35px;
 }
 
 #write blockquote h2::before {
     content: "Warning";
     background-color: rgb(207, 210, 16);
+    font-family: var(--title-font);
     color: white;
     font-size: var(--quote-tag-font-size);
     border-radius: .3em;
@@ -192,11 +199,14 @@ html {
 #write blockquote h3 {
     font-weight: 200;
     font-size: var(--quote-tag-font-size);
+    font-family: var(--base-font);
+    line-height: 35px;
 }
 
 #write blockquote h3::before {
     content: "Error";
     background-color: rgb(224, 66, 66);
+    font-family: var(--title-font);
     color: white;
     font-size: var(--quote-tag-font-size);
     border-radius: .3em;
@@ -207,11 +217,14 @@ html {
 #write blockquote h4 {
     font-weight: 200;
     font-size: var(--quote-tag-font-size);
+    font-family: var(--base-font);
+    line-height: 35px;
 }
 
 #write blockquote h4::before {
     content: "Remind";
     background-color: var(--shadow-color);
+    font-family: var(--title-font);
     color: white;
     font-size: var(--quote-tag-font-size);
     border-radius: .3em;
@@ -222,11 +235,14 @@ html {
 #write blockquote h5 {
     font-weight: 200;
     font-size: var(--quote-tag-font-size);
+    font-family: var(--base-font);
+    line-height: 35px;
 }
 
 #write blockquote h5::before {
     content: "Remind";
     background-color: var(--shadow-color);
+    font-family: var(--title-font);
     color: white;
     font-size: var(--quote-tag-font-size);
     border-radius: .3em;
@@ -940,7 +956,12 @@ div#file-library-list-children {
     border: none;
 }
 
-
+.ImgCaption {
+    padding-top: 0;
+    margin-top: 0;
+    border-bottom: 2px solid var(--shadow-color);
+    width: fit-content;
+  }
 
 /* Perference */
 .nav-group-item-item:hover {
@@ -1003,4 +1024,22 @@ input:not([type=range]):not([type=color]):focus {
 .label-input-group .row:hover {
     color: black;
     background-color: white;
+}
+
+#write.enable-diagrams>[mermaid-type=gantt].md-fences:not(.md-focus) {
+    width: inherit !important;
+    margin-left: inherit !important;
+}
+
+/* TODO fix the bug below */
+#footer-word-count-info table, #footer-word-count-info td, #footer-word-count-info tr {
+    border: none!important;
+    background: inherit !important;
+    font-size: 13.5px!important;
+    text-align: left!important;
+    padding: 0;
+    -webkit-user-select: initial;
+    user-select: initial;
+    margin: 0!important;
+    line-height: 1.8;
 }

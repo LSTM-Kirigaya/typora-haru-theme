@@ -2,8 +2,8 @@
 layout: theme
 title: Haru
 category: theme
-homepage: https://github.com/jinghu-moon/typora-haru-theme
-download: https://github.com/jinghu-moon/typora-haru-theme/releases/download/v1.0/typora-haru-theme.zip
+homepage: https://github.com/LSTM-Kirigaya/typora-haru-theme
+download: https://github.com/LSTM-Kirigaya/typora-haru-theme/releases/download/typora/haru.zip
 built-in: false
 author: 锦恢
 thumbnail: haru.png
