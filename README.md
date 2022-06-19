@@ -106,4 +106,4 @@ rendered result:
 
 ## Contract
 
-If you are interested in my design or something else, welcome to my [website ](https://xn--lbun88i.studio/)or [github homepage]([LSTM-Kirigaya (Kirigaya Kazuto) (github.com)](https://github.com/LSTM-Kirigaya)). If you has some feedback, you can create [issue]([Issues · LSTM-Kirigaya/typora-haru-theme (github.com)](https://github.com/LSTM-Kirigaya/typora-haru-theme/issues)) or email me 1193466151@qq.com
+If you are interested in my design or something else, welcome to my [website ](https://xn--lbun88i.studio/)or [github homepage](https://github.com/LSTM-Kirigaya). If you has some feedback, you can create [Issues](https://github.com/LSTM-Kirigaya/typora-haru-theme/issues) or email me 1193466151@qq.com
