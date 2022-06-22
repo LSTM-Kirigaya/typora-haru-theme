@@ -98,6 +98,12 @@ html {
     margin-right: 15px;
     background-color: var(--main-color);
     color: white;
+    float: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    vertical-align: baseline;
+    border-width: 0;
 }
 
 #write h3 {
@@ -114,6 +120,12 @@ html {
     border-radius: .3em;
     margin-right: 12px;
     padding: 4px 7px;
+    float: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    vertical-align: baseline;
+    border-width: 0;
 }
 
 #write h4 {
