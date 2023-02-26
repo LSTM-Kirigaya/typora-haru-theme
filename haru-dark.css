@@ -1,24 +1,28 @@
+@import "haru/mermaid.dark.css";
+@import "haru/codeblock.dark.css";
+@import "haru/sourcemode.dark.css";
+
 :root {
     --main-color: rgba(128, 30, 255, 1);
     --shadow-color : rgb(178, 80, 255);
+    --dark-main-color: rgb(32, 36, 43);
     --transplate-color : rgba(128, 30, 255, 0.1);
-    --dark-color : rgb(70, 18, 137);
+    --dark-color : rgb(40, 44, 52);
+    --small-dark-color: rgb(49, 54, 63);
     --light-color : rgb(248, 242, 255);
-    --font-color : rgb(12, 12, 12);
+    --font-color : rgb(248, 248, 250);
     --base-font : "Glow Sans", "Microsoft YaHei", serif;
     --title-font: "Roboto Slab", "Times", serif;
     --blockquote-font : "Times", "Roboto Slab", serif;
     --blockquote-color : rgba(117, 117, 117, 0.9);
     --monospace: "Cascadia code", "Courier New", monospace; 
 
-    /* --background : url("https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/2k.jpg"); */
-
     --quote-title-font-size : 0.9em;
     --quote-tag-font-size : 1.1em;
-
+ 
     /* typora GUI config */
-    --sidebar-font-color : black;
-    --main-panel-font-color : black;
+    --sidebar-font-color : rgb(248, 248, 250);
+    --main-panel-font-color : rgb(248, 248, 250);
 }
 
 @font-face {
@@ -44,7 +48,7 @@
 /* global setting */
 body {
     font-family: "Roboto Slab", "SimHei", serif;
-    /* background-color: rgb(255, 255, 255); */
+    background-color: var(--dark-color);
 }
 
 html {
@@ -52,8 +56,13 @@ html {
 	-ms-text-size-adjust: 100%;
 	text-rendering: optimizelegibility;
 	-webkit-font-smoothing: initial;
+    background-color: var(--dark-color);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--font-color);
+    font-family: var(--title-font);
+}
 
 /* write is a wrapper of writable region */
 #write {
@@ -70,8 +79,6 @@ html {
 
 h1, h2, h3,
 #write h1, h2, h3, h4, h5, h6 {
-    color: var(--font-color);
-    font-family: var(--title-font);
     font-weight: 800;
     line-height: 1.5;
     margin: 0 0 1em 0;
@@ -84,13 +91,16 @@ h1,
     line-height: 1.3; 
     border-bottom: solid 3px var(--main-color);
     width: fit-content;
+    color: var(--light-color);
 }
+
 
 h2,
 #write h2 {
     font-size: 28px;
     border-radius: .5em;
     width: fit-content;
+    color: var(--light-color);
 }
 
 #write h2::before {
@@ -107,6 +117,7 @@ h2,
     font-size: 24px;
     border-radius: .3em; 
     width: fit-content;
+    color: var(--light-color);
 }
 
 #write h3::before {
@@ -127,10 +138,12 @@ h2,
 
 #write h4 {
     font-size: 20px;
+    color: var(--light-color);
 }
 
 #write h5 {
     font-size: 16px;
+    color: var(--light-color);
 }
 
 #write hr {
@@ -138,6 +151,8 @@ h2,
     text-align:center;
     border-bottom: solid 1.8px var(--main-color);
     margin: 4.5em auto;
+    color: var(--light-color);
+    border-top: var(--main-color);
 }
 
 
@@ -156,20 +171,22 @@ h2,
     -webkit-transition: all 0.3s linear;
 } */
 
+
 blockquote,
 #write blockquote {
     padding: 10px 10px;
     font-size: var(--quote-title-font-size);
     color: var(--blockquote-color);
     border-left: 6px solid var(--main-color);
-    background: var(--light-color);
     border-radius : 0.5em;
     font-family: var(--blockquote-font);
+    background-color: var(--small-dark-color);
     line-height: 35px;
 }
 
 #write blockquote span {
     word-break: break-all;
+    color: var(--light-color);
 }
 
 #write blockquote h1 {
@@ -178,6 +195,7 @@ blockquote,
     border-bottom: none;
     font-family: var(--base-font);
     line-height: 35px;
+    color: var(--light-color);
 }
 
 #write blockquote h1::before {
@@ -189,6 +207,7 @@ blockquote,
     border-radius: .3em;
     padding: 3px 7px;
     margin-right: 15px;
+    color: var(--light-color);
 }
 
 #write blockquote h2 {
@@ -196,6 +215,7 @@ blockquote,
     font-size: var(--quote-tag-font-size);
     font-family: var(--base-font);
     line-height: 35px;
+    color: var(--light-color);
 }
 
 #write blockquote h2::before {
@@ -214,6 +234,7 @@ blockquote,
     font-size: var(--quote-tag-font-size);
     font-family: var(--base-font);
     line-height: 35px;
+    color: var(--light-color);
 }
 
 #write blockquote h3::before {
@@ -238,6 +259,7 @@ blockquote,
     font-size: var(--quote-tag-font-size);
     font-family: var(--base-font);
     line-height: 35px;
+    color: var(--light-color);
 }
 
 #write blockquote h4::before {
@@ -262,6 +284,7 @@ blockquote,
     font-size: var(--quote-tag-font-size);
     font-family: var(--base-font);
     line-height: 35px;
+    color: var(--light-color);
 }
 
 #write blockquote h5::before {
@@ -289,10 +312,14 @@ blockquote,
 	-webkit-overflow-scrolling: touch;
 	/* box-shadow: 0 0 6px 2px rgba(151, 151, 151, 0.9); */
     /* border-top: rgb(51, 51, 51) solid 35px; */
-    border-top: rgb(244, 244, 244) solid 35px;
-    background-color: rgb(244, 244, 244);
+    border-top: var(--small-dark-color) solid 35px;
+    background-color: var(--small-dark-color);
+    color: var(--font-color);
 }
 
+#write pre {
+    background-color: var(--small-dark-color);
+}
 
 pre.md-fences::before {
 	content: ' ';
@@ -312,22 +339,23 @@ pre.md-fences::before {
 	font-weight: 300;
 	border-radius: .7em;
     font-family: var(--monospace) !important;
+    color: var(--font-color);
 }
 
 /* inline code */
 code {
     margin: 0 2px;
     padding: 4px 6px;
-    color: #666363;
+    color: var(--light-color);
     white-space: pre-wrap;
-    background: var(--light-color);
+    background: var(--small-dark-color);
     border-radius: 8px;
 }
 
 #write blockquote code {
     margin: 0 2px;
     padding: 4px 6px;
-    color: white;
+    color: var(--light-color);
     white-space: pre-wrap;
     background: var(--main-color);
     border-radius: 8px;
@@ -346,21 +374,96 @@ pre.md-meta-block {
     font-size: .8rem;
     min-height: .8rem;
     white-space: pre-wrap;
-    background: var(--main-color);
+    background: var(--main-color) !important;
     display: block;
     overflow-x: hidden;
     padding: 15px;
     font-family: var(--monospace);
     border-radius: 1.2em;
-    color: white;
-    caret-color: white;
+    color: var(--light-color);
+    caret-color: var(--light-color);
 }
 
 
 /* Math */
-#math-inline-preview-content .MathJax {
-    color: white !important;
+.md-header-span .md-attr {
+    color: #8C8E92;
+    display: inline;
 }
+
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    background-color: var(--small-dark-color) !important;
+}
+
+.md-rawblock-on-edit>.md-rawblock-tooltip {
+    background-color: var(--small-dark-color);
+    color: var(--font-color);
+    transition: 0.3s linear;
+}
+
+
+
+.md-fences-adv-panel, .md-math-container, .md-mathjax-preview {
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    background-color: var(--dark-color);
+}
+
+.md-fences-adv-panel:hover,
+.md-math-container:hover,
+.md-mathjax-preview:hover {
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    background-color: var(--small-dark-color);
+}
+
+#math-inline-preview .md-arrow:after {
+    background: var(--small-dark-color);
+}
+
+.md-rawblock:hover>.md-rawblock-tooltip {
+    background-color: var(--small-dark-color);
+    color: var(--font-color);
+}
+
+.typora-sourceview-on #toggle-sourceview-btn,
+#footer-word-count:hover,
+.ty-show-word-count #footer-word-count {
+    background: var(--small-dark-color) !important;
+}
+
+#toggle-sourceview-btn:hover {
+    color: var(--font-color) !important;
+    background: var(--small-dark-color) !important;
+}
+
+.md-comment {
+    color: #5a95e3;
+    opacity: 0.8;
+}
+
+.md-inline-math script {
+    color: var(--light-color) !important;
+}
+
+.md-inline-math svg {
+    color: var(--light-color) !important;
+}
+
+#math-inline-preview .md-arrow:after {
+    background: var(--small-dark-color) !important;
+}
+
+.md-mathjax-midline {
+    background-color: var(--small-dark-color) !important;
+}
+
+.mathjax-block mjx-container[jax=SVG][display=true], .md-mathjax-preview mjx-container[jax=SVG][display=true] {
+    color: var(--light-color) !important;
+}
+
 
 /* table */
 #write table
@@ -384,6 +487,7 @@ pre.md-meta-block {
 }
 #write table td {
     font-family: var(--title-font);
+    color: var(--light-color) !important;
 }
 #write table thead th
 {
@@ -398,15 +502,14 @@ pre.md-meta-block {
 }
 table tr:nth-child(odd)
 {
-    background: white;
+    background: var(--dark-color);
 }
 table tr:nth-child(even)
 {
-    background: var(--light-color);
+    background: var(--dark-main-color);
 }
 table td:hover {
   background-color: var(--shadow-color) !important;
-  color: white !important;
   box-shadow: 0 0 10px 5px var(--shadow-color);
   transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -672,7 +775,7 @@ color: white;
 
 
 #megamenu-content {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--dark-color);
 }
 
 #megamenu-menu-panel {
@@ -682,6 +785,7 @@ color: white;
 
 .megamenu-menu-panel {
     padding: 10px;
+    color: var(--font-color);
 }
 
 
@@ -701,9 +805,9 @@ color: white;
     border-bottom: solid 3px var(--main-color);
 }
 #megamenu-menu-sidebar {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--small-dark-color);
     color: var(--sidebar-font-color);
-    box-shadow: 0 0 8px 4px rgb(100 100 100 / 80%);
+    box-shadow: 0 0 8px 4px rgba(42, 4, 80, 0.8);
     margin-top: 3%;
     height: 92%;
     border-radius: 0 4em 4em 0;
@@ -746,6 +850,16 @@ color: white;
     color: var(--main-color);
     background-color: var(--main-color);
 }
+
+.dropdown-menu {
+    color: var(--font-color) !important;
+    background-color: var(--small-dark-color) !important;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: var(--small-dark-color) !important;
+}
+
 .megamenu-menu-list li a {
     transition: all linear .3s;
     width: fit-content;
@@ -767,6 +881,11 @@ color: white;
     border-top-right-radius: 2em;
 }
 
+sup.md-footnote {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
 
 /* open */
 #m-open-local,
@@ -783,7 +902,10 @@ color: white;
     border-radius: 1.2em;
     transition: all linear .3s;
     font-family: var(--title-font);
+    border: var(--small-dark-color) solid;
+    background-color: var(--small-dark-color);
 }
+
 #recent-file-panel-action-btn {
     border-radius: 1.2em;  
 }
@@ -799,6 +921,30 @@ color: white;
     border: none;
     background-color: var(--shadow-color);
 }
+
+
+
+/* 最近打开的文件 */
+#recent-file-panel-action-btn {
+    background-color: var(--small-dark-color);
+    color: var(--font-color);
+    border-radius: 0.7em;
+}
+
+.megamenu-menu-panel table {
+    color: var(--font-color);
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: var(--small-dark-color);
+}
+
+.megamenu-menu-panel table tr td, .megamenu-menu-panel table tr th {
+    color: var(--font-color);
+    border-radius: 0.7em;
+}
+
+
 
 /* side bar Ctrl Shift 2 */
 /* .typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #typora-sidebar {
@@ -931,8 +1077,14 @@ div#file-library-list-children {
     padding: 10px;
 }
 
+.megamenu-content,
+.megamenu-opened header {
+    background: var(--dark-color);
+}
+
 .megamenu-section-export {
     font-family: var(--title-font) !important;
+    background: var(--dark-color);
 }
 
 
@@ -940,6 +1092,7 @@ div#file-library-list-children {
     padding-bottom: 10px;
     width: fit-content !important;
     border-bottom: var(--main-color) solid 3px;
+    background: var(--dark-color);
 }
 
 .megamenu-menu-panel h2::before {
@@ -958,14 +1111,15 @@ div#file-library-list-children {
     transition: all .3 linear;
     border-radius: 1.2em;
     background-color: var(--main-color);
+    color: var(--font-color);
 }
 
 .btn-default {
     transition: all .3 linear;
     border-radius: 1.2em;
     border: var(--main-color) 3px solid;
-    color: var(--main-color);
-    background-color: white;
+    color: var(--shadow-color);
+    background-color: var(--small-dark-color);
 }   
 
 .btn-primary:hover,
@@ -985,12 +1139,14 @@ div#file-library-list-children {
 .modal-content {
     border-radius: 1.5em;
     border: none;
+    background: var(--small-dark-color) !important;
+    color: var(--font-color) !important;
 }
 
 .ImgCaption {
     padding-top: 0;
     margin-top: 0;
-    border-bottom: 2px solid var(--shadow-color);
+    border-bottom: 2px solid var(--main-color);
     width: fit-content;
   }
 
@@ -1075,14 +1231,157 @@ input:not([type=range]):not([type=color]):focus {
     line-height: 1.8;
 }
 
-.ty-tooltip {
-    border-radius: 0.7em !important;
+/* dark side */
+
+.ty-icon {
+    color: var(--light-color) !important;
 }
 
-#recent-file-panel-action-btn {
-    border-radius: 0.7em;
+.typora-node #typora-sidebar {
+    background-color: var(--small-dark-color);
+}
+
+.info-panel-tab-title {
+    color: var(--light-color);
+}
+
+div #file-library-list-children {
+    color: var(--light-color);
+}
+
+
+.modal-backdrop {
+    background-color: rgba(174, 174, 174, 0.7);
+}
+
+.md-table-resize-popover {
+    background-color: #333;
+}
+
+.form-inline .input-group .input-group-addon {
+    color: white;
+}
+
+#md-searchpanel {
+    border-bottom: 1px dashed grey;
+}
+
+::-moz-selection {
+    background: #4a89dc;
+    color: #fff;
+    text-shadow: none;
+}
+
+*.in-text-selection,
+::selection {
+    background: #4a89dc;
+    color: #fff;
+    text-shadow: none;
+}
+
+.title-text {
+    color: var(--font-color) !important;
+}
+
+#top-titlebar, #top-titlebar * {
+    color: var(--font-color) !important;
+}
+
+
+/* 左侧side bar 中的 打开文件夹 */
+.sidebar-footer-main-item-label {
+    color: var(--font-color) !important;
+}
+
+#outline-content {
+    color: var(--font-color);
 }
 
 .outline-content li, .outline-content ul {
     padding-left: 10px;
+}
+
+
+/* 底部状态栏 */
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) footer.ty-footer {
+    color: var(--font-color) !important;
+}
+.show-footer footer.ty-footer {
+    color: var(--font-color) !important;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn {
+    background-color: var(--small-dark-color) !important;
+    border-top-right-radius: 0.8em;
+}
+
+.ty-tooltip {
+    border-radius: 0.7em !important;
+    background: var(--small-dark-color) !important;
+    color: var(--font-color) !important;
+}
+
+.CodeMirror-lines {
+    color: var(--font-color);
+}
+
+ol {
+    list-style: decimal;
+    color: var(--font-color);
+}
+
+ul {
+    list-style: circle;
+    color: var(--font-color);
+}
+
+ol::marker {
+    color: var(--font-color) !important;
+}
+
+ul::marker{
+    color: var(--font-color) !important;
+}
+
+/* preference setting */
+.window {
+    background-color: var(--dark-color) !important;
+    color: var(--font-color) !important;
+}
+
+.window-header {
+    background-color: var(--small-dark-color) !important;
+}
+
+.pane select, .pane .btn {
+    background-color: var(--small-dark-color);
+}
+
+button.btn-default {
+    color: var(--font-color);
+}
+
+.export-detail, .export-item.active, .export-items-list-control {
+    background-color: var(--small-dark-color);
+}
+
+textarea {
+    background-color: var(--small-dark-color);
+    border-radius: 0.7em;
+    font-family: var(--base-font) !important;
+}
+
+.export-detail input[type=number], .export-detail input[type=text] {
+    background-color: var(--small-dark-color);
+    border-radius: 0.7em;
+    font-family: var(--base-font) !important;
+    color: var(--font-color);
+}
+
+table select {
+    transition: none;
+}
+
+table select:hover {
+    transition: none;
 }

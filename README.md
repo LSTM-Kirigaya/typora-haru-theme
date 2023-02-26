@@ -21,7 +21,12 @@ Some bugs have been fixed. Thanks for [hongyun-robot](https://github.com/hongyun
 
 `Haru` is a light style theme for Typora. I hope it can bring you inspiration, elegance and peaceful mind.
 
-![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru.png)
+![](https://raw.githubusercontent.com/LSTM-Kirigaya/KImage/main/Img/haru.png)
+
+
+Dark Side (HaruDark) is currently supported:
+
+![](https://pic3.zhimg.com/v2-d9f4c37e1655dec2e98f1352b89d668e_r.jpg)
 
 ---
 
@@ -29,19 +34,19 @@ Some bugs have been fixed. Thanks for [hongyun-robot](https://github.com/hongyun
 
 ### Basic
 
-![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru1.png)
+![](https://raw.githubusercontent.com/LSTM-Kirigaya/KImage/main/Img/haru1.png)
 
 ### Example
 
-![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru2.png)
+![](https://raw.githubusercontent.com/LSTM-Kirigaya/KImage/main/Img/haru2.png)
 
 ### Typora Menu
 
-![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru3.png)
+![](https://raw.githubusercontent.com/LSTM-Kirigaya/KImage/main/Img/haru3.png)
 
 ### Exit Dialog
 
-![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru4.png)
+![](https://raw.githubusercontent.com/LSTM-Kirigaya/KImage/main/Img/haru4.png)
 
 ---
 
@@ -55,7 +60,7 @@ Almost every element or container in haru is designed as round corner, including
 
 Table in haru doesn't have border and cell will be highlighted on any hover.
 
-![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru6.png)
+![](https://raw.githubusercontent.com/LSTM-Kirigaya/KImage/main/Img/haru6.png)
 
 
 
@@ -75,7 +80,7 @@ I combine title and blockquote to make extra information:
 
 rendered result:
 
-![](https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/haru5.png)
+![](https://raw.githubusercontent.com/LSTM-Kirigaya/KImage/main/Img/haru5.png)
 
 ---
 
