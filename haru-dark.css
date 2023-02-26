@@ -407,7 +407,7 @@ pre.md-meta-block {
     transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
-    background-color: var(--dark-color);
+    background-color: var(--small-dark-color);
 }
 
 .md-fences-adv-panel:hover,
