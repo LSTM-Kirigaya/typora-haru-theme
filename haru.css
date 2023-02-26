@@ -1086,3 +1086,45 @@ input:not([type=range]):not([type=color]):focus {
 .outline-content li, .outline-content ul {
     padding-left: 10px;
 }
+
+
+.file-node-content {
+    transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    color: var(--font-color);
+    padding: 5px;
+}
+
+
+.file-node-content:hover {
+    transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.file-node-content:focus {
+    transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    cursor: pointer;
+}
+
+#file-library .active {
+    transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.file-tree-node.active>.file-node-background {
+    transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    background-color: var(--main-color);
+    border-left: var(--small-dark-color);
+    border-color: var(--small-dark-color);
+}
