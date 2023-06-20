@@ -4,6 +4,7 @@
 
 :root {
     --main-color: rgba(128, 30, 255, 1);
+    --cursor-color: rgb(248, 242, 255);
     --shadow-color : rgb(178, 80, 255);
     --dark-main-color: rgb(32, 36, 43);
     --transplate-color : rgba(128, 30, 255, 0.1);
@@ -74,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.6;
     transform: none;
     height: auto;
-    caret-color: var(--main-color);
+    caret-color: var(--cursor-color);
 }
 
 h1, h2, h3,
