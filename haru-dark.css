@@ -158,8 +158,8 @@ h2,
 
 
 #write img {
-    border-radius: 1.5em !important;
-    box-shadow: 0 0 10px 3px rgba(134, 136, 137, 0.8);
+    border-radius: .5em !important;
+    box-shadow: 0 0 10px 3px rgba(134, 136, 137, 0.1);
     transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
@@ -408,17 +408,8 @@ pre.md-meta-block {
     transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
-    background-color: var(--small-dark-color);
 }
 
-.md-fences-adv-panel:hover,
-.md-math-container:hover,
-.md-mathjax-preview:hover {
-    transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-    background-color: var(--small-dark-color);
-}
 
 #math-inline-preview .md-arrow:after {
     background: var(--small-dark-color);
@@ -463,6 +454,7 @@ pre.md-meta-block {
 
 .mathjax-block mjx-container[jax=SVG][display=true], .md-mathjax-preview mjx-container[jax=SVG][display=true] {
     color: var(--light-color) !important;
+    background: var(--dark-color);
 }
 
 
@@ -493,6 +485,7 @@ pre.md-meta-block {
 #write table thead th
 {
     background-color: var(--shadow-color);
+    font-family: var(--title-font);
     font-size: 20px;
     color: white;
     font-weight: bolder;
@@ -511,7 +504,6 @@ table tr:nth-child(even)
 }
 table td:hover {
   background-color: var(--shadow-color) !important;
-  box-shadow: 0 0 10px 5px var(--shadow-color);
   transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
@@ -1426,4 +1418,10 @@ table select {
 
 table select:hover {
     transition: none;
+}
+
+/* 输入三个点之后的语言建议 */
+#ty-auto-suggest {
+    background: var(--dark-color);
+    box-shadow: 0 0 10px 3px rgba(69, 74, 83, 0.5);   
 }

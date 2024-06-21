@@ -142,8 +142,8 @@ h2,
 
 
 #write img {
-    border-radius: 1.5em !important;
-    box-shadow: 0 0 10px 3px rgba(134, 136, 137, 0.8);
+    border-radius: .5em !important;
+    box-shadow: 0 0 10px 3px rgba(134, 136, 137, 0.1);
     transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
@@ -388,6 +388,7 @@ pre.md-meta-block {
 #write table thead th
 {
     background-color: var(--shadow-color);
+    font-family: var(--title-font);
     font-size: 20px;
     color: white;
     font-weight: bolder;
@@ -407,7 +408,6 @@ table tr:nth-child(even)
 table td:hover {
   background-color: var(--shadow-color) !important;
   color: white !important;
-  box-shadow: 0 0 10px 5px var(--shadow-color);
   transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
